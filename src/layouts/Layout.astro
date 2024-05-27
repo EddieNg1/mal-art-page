@@ -5,6 +5,8 @@ interface Props {
   image?: string;
 }
 
+import Nav from "../components/Nav.tsx";
+
 const {
   title,
   description = "Showcase of Maleah's artwork",
@@ -24,6 +26,7 @@ const {
     <title>{title}</title>
   </head>
   <body class="min-h-screen">
+    <Nav />
     <slot />
   </body>
 </html>
